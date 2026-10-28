@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is registration for Tyla's concert">
+    <link rel="icon" href="Tyla.jpeg">
+    <title>Tyla live in Nairobi</title>
+</head>
+<body>
+    <header>
+        <h1>TYLA LIVE IN NAIROBI</h1>
+        <P>One night. One stage. Unforgettable vides.</P>
+    </header>
+    <main>
+        <h2>Register for the concert</h2>
+        <p>Fill in the form below to reserve your tickets</p>
+        <form action="https//httpbin.org/post" method="post">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label>Full Name:</label>
+                <input type="text" placeholder="Enter your full names">
+                <br>
+                <label>Email Address</label>
+                <input type="email" placeholder="you@example.com">
+                <br>
+                <label>Phone Number</label>
+                <input type="tel" placeholder="07....." pattern="07[0-9]{8}">
+                <br>
+                <label>Date of Birth</label>
+                <input type="date" required>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>Ticket Details</legend>
+                <label>Number of Tickets</label>
+                <input type="number" min="1" max="5" required>
+                <br>
+                <h3>Choose your ticket type</h3>
+                <label>Regular-Ksh 4000</label>
+                <input type="radio" name="ticket" value="Regular" required>
+                <br>
+                <label>VIP-Ksh 8000</label>
+                <input type="radio" name="ticket" value="VIP" required>
+                <br>
+                <label>VVIP-Ksh 15000</label>
+                <input type="radio" name="ticket" value="VVIP" required>
+                <br><br>
+                <label>Your city</label>
+                <br>
+                <select name="City" required>
+                    <option value="">Select city</option>
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Mombasa">Mombasa</option>
+                    <option value="Kisumu">Kisumu</option>
+                    <option value="Nakuru">Nakuru</option>
+                    <option value="Other">Other</option>
+                </select>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Music Interest</legend>
+                <label>Pop</label>
+                <input type="checkbox" name="music" value="pop">
+                <br>
+                <label>Afrobeats</label>
+                <input type="checkbox" name="music" value="afrobeats">
+                <br>
+                <label>RnB</label>
+                <input type="checkbox" name="music" value="RnB">
+            </fieldset>
+                <br>
+               <p> <em>Comments or special requests</em></p>
+                <textarea name="comments" placeholder="Comments and special requests" rows="5" cols="40"></textarea>
+                <br><br>
+                <label>I agree to the terms and conditions</label>
+                <input type="checkbox" name="terms" value="agree" required>
+                <button type="submit">Register now</button>
+                <button type="reset">Reset</button>
+                 </form>
+    </main>
+    <footer>
+        <p>&copy;2026 Tyla live in Nairobi. All rights reserved</p>
+    </footer>
+    
+</body>
+</html>
